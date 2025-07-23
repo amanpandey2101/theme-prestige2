@@ -34,8 +34,8 @@
         "settings": {
           "background": "#ffffff",
           "background_gradient": "linear-gradient(54deg, rgba(NaN, NaN, NaN, 1) 14%, rgba(255, 250, 99, 1) 85%)",
-          "text_color": "#5c5c5c",
-          "primary_button_background": "#5c5c5c",
+          "text_color": "#000000",
+          "primary_button_background": "#000000",
           "primary_button_text_color": "#ffffff",
           "circle_button_background": "#ffffff",
           "circle_button_icon": "#1c1c1c"
