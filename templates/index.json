@@ -264,6 +264,7 @@
           "type": "image",
           "settings": {
             "color_scheme": "",
+            "image": "shopify://shop_images/b_3.jpg",
             "column_count": "8",
             "row_count": 2,
             "title": "",
