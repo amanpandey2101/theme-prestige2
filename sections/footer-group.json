@@ -74,20 +74,19 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "newsletter": {
-          "type": "newsletter",
+        "image_G86FK9": {
+          "type": "image",
           "settings": {
-            "title": "Newsletter",
-            "content": "<p>Sign up to our newsletter to receive exclusive offers.</p>",
-            "button_background": "",
-            "button_text_color": ""
+            "image": "shopify://shop_images/Artboard_4_4x_01a4453e-1850-42b2-b80e-fc2ed5cffc0d.png",
+            "image_width": 150,
+            "link": ""
           }
         },
         "links": {
           "type": "links",
           "settings": {
             "menu": "footer",
-            "show_menu_title": true,
+            "show_menu_title": false,
             "menu_title": ""
           }
         },
@@ -101,7 +100,7 @@
         }
       },
       "block_order": [
-        "newsletter",
+        "image_G86FK9",
         "links",
         "text"
       ],
