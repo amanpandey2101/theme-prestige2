@@ -12,6 +12,7 @@
     "icon_stroke_width": 1,
     "section_vertical_spacing": "xs",
     "button_border_radius": 38,
+    "input_border_radius": 20,
     "product_rating_color": "#1c1c1c",
     "product_on_sale_accent": "#e32c2b",
     "product_sold_out_badge_background": "#efefef",
