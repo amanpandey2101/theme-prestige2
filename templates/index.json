@@ -264,7 +264,6 @@
           "type": "image",
           "settings": {
             "color_scheme": "",
-            "image": "shopify://shop_images/023A5034.png",
             "column_count": "8",
             "row_count": 2,
             "title": "",
@@ -282,7 +281,6 @@
           "type": "image",
           "settings": {
             "color_scheme": "",
-            "image": "shopify://shop_images/023A5043.png",
             "column_count": "4",
             "row_count": 1,
             "title": "",
