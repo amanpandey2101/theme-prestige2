@@ -39,10 +39,61 @@
         "title": "Contact",
         "content": ""
       }
+    },
+    "text_with_icons_6h6hwR": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_Kh6JUm": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "Free shipping",
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
+          }
+        },
+        "item_CDpyi8": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "Customer service",
+            "content": "<p>We are available from monday to friday to answer your questions.</p>"
+          }
+        },
+        "item_BpEtLT": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "Secure payment",
+            "content": "<p>Your payment information is processed securely.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_Kh6JUm",
+        "item_CDpyi8",
+        "item_BpEtLT"
+      ],
+      "disabled": true,
+      "name": "t:sections.text_with_icons.presets.text_with_icons.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "stack_on_mobile": false,
+        "icon_color": "rgba(0,0,0,0)",
+        "text_color": "",
+        "text_alignment": "center"
+      }
     }
   },
   "order": [
     "main",
-    "contact-form"
+    "contact-form",
+    "text_with_icons_6h6hwR"
   ]
 }
