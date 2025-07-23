@@ -22,7 +22,7 @@
             "title": "Video slide",
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "content_max_width": 780,
+            "content_max_width": 1200,
             "button_1_text": "Shop Now",
             "button_1_link": "",
             "button_1_style": "outline",
@@ -137,11 +137,63 @@
             "border_color": "",
             "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2) 0%, rgba(4, 4, 4, 0.65) 100%)"
           }
+        },
+        "image_9n7Cyq": {
+          "type": "image",
+          "settings": {
+            "subheading": "Tell your story",
+            "title": "Image slide",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "image_GKqc9J": {
+          "type": "image",
+          "settings": {
+            "subheading": "Tell your story",
+            "title": "Image slide",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
         }
       },
       "block_order": [
         "image_RQNEGB",
-        "image_jGiytg"
+        "image_jGiytg",
+        "image_9n7Cyq",
+        "image_GKqc9J"
       ],
       "custom_css": [
         ".slideshow {margin-bottom: 5vh;}"
@@ -185,7 +237,7 @@
         "scrolling_speed": 0.3,
         "scroll_direction": "left",
         "text_font": "heading",
-        "text_font_size_mobile": 20,
+        "text_font_size_mobile": 10,
         "text_font_size_desktop": 10,
         "section_vertical_spacing_mobile": 10,
         "section_vertical_spacing_desktop": 14,
