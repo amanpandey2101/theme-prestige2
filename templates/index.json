@@ -156,18 +156,40 @@
         "controls_color": "#ffffff"
       }
     },
-    "newsletter": {
-      "type": "newsletter",
+    "scrolling_content_iQGDFz": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_inHVTJ": {
+          "type": "text",
+          "settings": {
+            "text": "Welcome to our shop"
+          }
+        },
+        "text_LkGmBw": {
+          "type": "text",
+          "settings": {
+            "text": "Discover our products"
+          }
+        }
+      },
+      "block_order": [
+        "text_inHVTJ",
+        "text_LkGmBw"
+      ],
+      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
       "settings": {
-        "color_scheme": "",
         "separate_section_with_border": true,
-        "image_size": "auto",
-        "subheading": "Keep me updated",
-        "title": "Newsletter",
-        "content": "<p>A short sentence describing what someone will receive by subscribing.</p>",
-        "button_text": "Subscribe",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "scrolling_speed": 0.3,
+        "scroll_direction": "left",
+        "text_font": "heading",
+        "text_font_size_mobile": 20,
+        "text_font_size_desktop": 10,
+        "section_vertical_spacing_mobile": 10,
+        "section_vertical_spacing_desktop": 10,
+        "item_horizontal_spacing_mobile": 10,
+        "item_horizontal_spacing_desktop": 120,
+        "background": "",
+        "text_color": ""
       }
     }
   },
@@ -175,6 +197,6 @@
     "slideshow",
     "featured-collections",
     "slideshow_jjy8AP",
-    "newsletter"
+    "scrolling_content_iQGDFz"
   ]
 }
