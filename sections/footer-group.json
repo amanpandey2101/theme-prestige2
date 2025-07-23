@@ -78,7 +78,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Artboard_4_4x_01a4453e-1850-42b2-b80e-fc2ed5cffc0d.png",
-            "image_width": 300,
+            "image_width": 170,
             "link": ""
           }
         },
@@ -116,7 +116,7 @@
         "text"
       ],
       "custom_css": [
-        ".footer{margin-top:5vh;}"
+        ".footer {margin-top: 5vh; text-align: center;}"
       ],
       "settings": {
         "color_scheme": "",
