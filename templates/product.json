@@ -46,8 +46,8 @@
         "description": {
           "type": "description",
           "settings": {
-            "collapse_content": false,
-            "show_below_gallery": false
+            "collapse_content": true,
+            "show_below_gallery": true
           }
         },
         "variant_picker": {
@@ -85,13 +85,24 @@
             "show_quick_buy": true
           }
         },
-        "accordion_cnWyax": {
+        "accordion_U4KVef": {
           "type": "accordion",
           "settings": {
             "show_below_gallery": true,
             "icon": "none",
-            "title": "Description",
-            "content": "",
+            "title": "Specifications",
+            "content": "<p><em>UNISEX<br/>100% FRENCH TERRY COTTON<br/>240 GSM<br/>FITS OVERSIZED</em></p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_G7ErUU": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "Wash Care",
+            "content": "<p><em>HAND WASH ONLY<br/>REVERSE IRON<br/>DO NOT BLEACH<br/>LAY FLAT TO DRY<br/>COLD WASH ONLY</em></p>",
             "liquid": "",
             "page": ""
           }
@@ -109,7 +120,8 @@
         "quantity_selector",
         "buy_buttons",
         "complementary_products",
-        "accordion_cnWyax"
+        "accordion_U4KVef",
+        "accordion_G7ErUU"
       ],
       "settings": {
         "color_scheme": "",
