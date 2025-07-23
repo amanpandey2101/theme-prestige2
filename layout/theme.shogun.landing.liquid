@@ -69,7 +69,9 @@ This file can be re-written at any time.
     {{ content_for_header }}
 
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
-  </head>
+  
+  {% render 'shogun-head' %}
+</head>
   <body>
     {% include 'shogun-content-handler' %}
 
