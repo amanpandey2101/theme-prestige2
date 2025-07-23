@@ -67,7 +67,9 @@
     {{ content_for_header }}
 
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
-  </head>
+  
+  {% render 'shogun-head' %}
+</head>
 
   {% liquid
     assign features_class = ''
