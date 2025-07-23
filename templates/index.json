@@ -63,7 +63,7 @@
           "type": "collection",
           "settings": {
             "collection": "t-shirts",
-            "products_count": 8,
+            "products_count": 4,
             "title": "",
             "link_url": "shopify://collections/all-t-shirts",
             "link_text": "View all"
