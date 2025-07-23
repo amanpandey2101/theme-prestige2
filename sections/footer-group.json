@@ -74,6 +74,15 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "newsletter_8cgxMQ": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Newsletter",
+            "content": "<p>Sign up to our newsletter to receive exclusive offers.</p>",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff"
+          }
+        },
         "image_G86FK9": {
           "type": "image",
           "settings": {
@@ -101,6 +110,7 @@
         }
       },
       "block_order": [
+        "newsletter_8cgxMQ",
         "image_G86FK9",
         "links",
         "text"
