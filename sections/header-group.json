@@ -19,10 +19,17 @@
           "settings": {
             "text": "Aquatic Drop is Live!!!"
           }
+        },
+        "message_nnfcRA": {
+          "type": "message",
+          "settings": {
+            "text": "Dive into Our Latest Collection!"
+          }
         }
       },
       "block_order": [
-        "message-1"
+        "message-1",
+        "message_nnfcRA"
       ],
       "settings": {
         "color_scheme": "",
