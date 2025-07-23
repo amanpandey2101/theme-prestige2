@@ -45,7 +45,7 @@
         "video_FLFyH7"
       ],
       "settings": {
-        "allow_transparent_header": true,
+        "allow_transparent_header": false,
         "show_next_section_button": true,
         "media_size": "lg",
         "show_initial_transition": true,
