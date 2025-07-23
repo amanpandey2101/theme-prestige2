@@ -16,7 +16,7 @@
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/WesbiteVideo_10801440.mp4",
-            "mobile_video": "shopify://files/videos/WesbiteVideo_10801440.mp4",
+            "mobile_video": "shopify://files/videos/69 coming soon_1.mp4",
             "allow_sound": false,
             "subheading": "Tell your story",
             "title": "Video slide",
@@ -52,7 +52,7 @@
         "autoplay": true,
         "autoplay_pause_on_video": true,
         "cycle_speed": 5,
-        "background": "#000000",
+        "background": "#b7b2b2",
         "controls_color": "#ffffff"
       }
     },
@@ -246,12 +246,118 @@
         "background": "#000000",
         "text_color": "#ffffff"
       }
+    },
+    "media_grid_7N6gNG": {
+      "type": "media-grid",
+      "blocks": {
+        "image_AyccHA": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/2_3c6f805f-d514-4a8c-869d-fdf5930b7bf6.png",
+            "column_count": "8",
+            "row_count": 2,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_CRpRXK": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "column_count": "4",
+            "row_count": 1,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_8hVCgL": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "",
+            "column_count": "4",
+            "row_count": 1,
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_AyccHA",
+        "image_CRpRXK",
+        "image_8hVCgL"
+      ],
+      "name": "t:sections.media_grid.presets.media_grid.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "desktop_row_height": 290,
+        "mobile_row_height": 180,
+        "section_width": "lg",
+        "spacing": "md",
+        "subheading": "",
+        "title": "Media grid",
+        "content": ""
+      }
+    },
+    "image_with_text_block_QVyJ4g": {
+      "type": "image-with-text-block",
+      "blocks": {
+        "subheading_VCkzFf": {
+          "type": "subheading",
+          "settings": {
+            "text": "Image with text block"
+          }
+        },
+        "richtext_3BePgm": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_VCkzFf",
+        "richtext_3BePgm"
+      ],
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "lg",
+        "image": "shopify://shop_images/1_3c3c0ff9-285c-4d79-ba23-cea5602fec17.png",
+        "content_width": "sm",
+        "enable_parallax": true,
+        "remove_vertical_spacing": true
+      }
     }
   },
   "order": [
     "slideshow",
     "featured-collections",
     "slideshow_jjy8AP",
-    "scrolling_content_iQGDFz"
+    "scrolling_content_iQGDFz",
+    "media_grid_7N6gNG",
+    "image_with_text_block_QVyJ4g"
   ]
 }
