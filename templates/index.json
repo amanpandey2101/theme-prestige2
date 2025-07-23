@@ -110,7 +110,7 @@
             "background_opacity": 50,
             "text_color": "#ffffff",
             "border_color": "",
-            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2) 0%, rgba(4, 4, 4, 0.65) 100%)"
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
           }
         },
         "image_jGiytg": {
@@ -142,6 +142,9 @@
       "block_order": [
         "image_RQNEGB",
         "image_jGiytg"
+      ],
+      "custom_css": [
+        ".slideshow {margin-bottom: 5vh;}"
       ],
       "name": "t:sections.slideshow.presets.slideshow.name",
       "settings": {
@@ -185,11 +188,11 @@
         "text_font_size_mobile": 20,
         "text_font_size_desktop": 10,
         "section_vertical_spacing_mobile": 10,
-        "section_vertical_spacing_desktop": 10,
+        "section_vertical_spacing_desktop": 14,
         "item_horizontal_spacing_mobile": 10,
         "item_horizontal_spacing_desktop": 120,
-        "background": "",
-        "text_color": ""
+        "background": "#000000",
+        "text_color": "#ffffff"
       }
     }
   },
