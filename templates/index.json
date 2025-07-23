@@ -224,6 +224,36 @@
         "text_color": "#ffffff"
       }
     },
+    "image_with_text_block_QVyJ4g": {
+      "type": "image-with-text-block",
+      "blocks": {
+        "subheading_VCkzFf": {
+          "type": "subheading",
+          "settings": {
+            "text": "Image with text block"
+          }
+        },
+        "richtext_3BePgm": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_VCkzFf",
+        "richtext_3BePgm"
+      ],
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "lg",
+        "image": "shopify://shop_images/1_3c3c0ff9-285c-4d79-ba23-cea5602fec17.png",
+        "content_width": "sm",
+        "enable_parallax": true,
+        "remove_vertical_spacing": true
+      }
+    },
     "media_grid_7N6gNG": {
       "type": "media-grid",
       "blocks": {
@@ -294,38 +324,8 @@
         "section_width": "lg",
         "spacing": "md",
         "subheading": "",
-        "title": "Media grid",
+        "title": "",
         "content": ""
-      }
-    },
-    "image_with_text_block_QVyJ4g": {
-      "type": "image-with-text-block",
-      "blocks": {
-        "subheading_VCkzFf": {
-          "type": "subheading",
-          "settings": {
-            "text": "Image with text block"
-          }
-        },
-        "richtext_3BePgm": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_VCkzFf",
-        "richtext_3BePgm"
-      ],
-      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
-      "settings": {
-        "color_scheme": "",
-        "image_size": "lg",
-        "image": "shopify://shop_images/1_3c3c0ff9-285c-4d79-ba23-cea5602fec17.png",
-        "content_width": "sm",
-        "enable_parallax": true,
-        "remove_vertical_spacing": true
       }
     }
   },
@@ -334,7 +334,7 @@
     "featured-collections",
     "slideshow_jjy8AP",
     "scrolling_content_iQGDFz",
-    "media_grid_7N6gNG",
-    "image_with_text_block_QVyJ4g"
+    "image_with_text_block_QVyJ4g",
+    "media_grid_7N6gNG"
   ]
 }
