@@ -31,11 +31,11 @@
       "settings": {
         "color_scheme": "",
         "hide_product_information": false,
-        "products_per_page": 48,
+        "products_per_page": 20,
         "products_per_row_mobile": "2",
         "products_size_desktop": "medium",
         "show_grid_mode_selector": true,
-        "horizontal_spacing_factor": 1,
+        "horizontal_spacing_factor": 0.5,
         "vertical_spacing_factor": 1,
         "filter_layout": "sidebar",
         "quick_links_menu": "",
@@ -44,7 +44,7 @@
         "show_results_count": true,
         "show_filter_group_name": false,
         "show_filter_values_count": true,
-        "open_filters_by_default": false
+        "open_filters_by_default": true
       }
     }
   },
