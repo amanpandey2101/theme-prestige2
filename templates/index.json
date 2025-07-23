@@ -188,42 +188,6 @@
         "controls_color": "#ffffff"
       }
     },
-    "scrolling_content_iQGDFz": {
-      "type": "scrolling-content",
-      "blocks": {
-        "text_inHVTJ": {
-          "type": "text",
-          "settings": {
-            "text": "Welcome to our shop"
-          }
-        },
-        "text_LkGmBw": {
-          "type": "text",
-          "settings": {
-            "text": "Discover our products"
-          }
-        }
-      },
-      "block_order": [
-        "text_inHVTJ",
-        "text_LkGmBw"
-      ],
-      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
-      "settings": {
-        "separate_section_with_border": true,
-        "scrolling_speed": 0.3,
-        "scroll_direction": "left",
-        "text_font": "heading",
-        "text_font_size_mobile": 10,
-        "text_font_size_desktop": 10,
-        "section_vertical_spacing_mobile": 10,
-        "section_vertical_spacing_desktop": 14,
-        "item_horizontal_spacing_mobile": 10,
-        "item_horizontal_spacing_desktop": 120,
-        "background": "#000000",
-        "text_color": "#ffffff"
-      }
-    },
     "image_with_text_block_QVyJ4g": {
       "type": "image-with-text-block",
       "blocks": {
@@ -332,14 +296,50 @@
         "title": "The Vibe, Captured",
         "content": ""
       }
+    },
+    "scrolling_content_iQGDFz": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_inHVTJ": {
+          "type": "text",
+          "settings": {
+            "text": "Welcome to our shop"
+          }
+        },
+        "text_LkGmBw": {
+          "type": "text",
+          "settings": {
+            "text": "Discover our products"
+          }
+        }
+      },
+      "block_order": [
+        "text_inHVTJ",
+        "text_LkGmBw"
+      ],
+      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
+      "settings": {
+        "separate_section_with_border": true,
+        "scrolling_speed": 0.3,
+        "scroll_direction": "left",
+        "text_font": "heading",
+        "text_font_size_mobile": 10,
+        "text_font_size_desktop": 10,
+        "section_vertical_spacing_mobile": 10,
+        "section_vertical_spacing_desktop": 14,
+        "item_horizontal_spacing_mobile": 10,
+        "item_horizontal_spacing_desktop": 120,
+        "background": "#000000",
+        "text_color": "#ffffff"
+      }
     }
   },
   "order": [
     "slideshow",
     "featured-collections",
     "slideshow_jjy8AP",
-    "scrolling_content_iQGDFz",
     "image_with_text_block_QVyJ4g",
-    "media_grid_7N6gNG"
+    "media_grid_7N6gNG",
+    "scrolling_content_iQGDFz"
   ]
 }
