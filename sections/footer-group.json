@@ -116,7 +116,8 @@
         "text"
       ],
       "custom_css": [
-        ".footer {margin-top: 5vh; text-align: center;}"
+        ".footer {margin-top: 5vh; text-align: center;}",
+        ".footer__block--image{position: relative; display: flex; justify-content: center;}"
       ],
       "settings": {
         "color_scheme": "",
