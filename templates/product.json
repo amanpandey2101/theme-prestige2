@@ -12,21 +12,28 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "vendor",
-          "settings": {}
-        },
         "title": {
           "type": "title",
           "settings": {
-            "heading_tag": "h3"
+            "heading_tag": "h2"
           }
         },
         "price": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": false
+            "show_taxes_notice": true
           }
+        },
+        "text_kLkdLk": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Incl. of all taxes</p>"
+          }
+        },
+        "share_buttons_JQX6cm": {
+          "type": "share_buttons",
+          "settings": {}
         },
         "payment_terms": {
           "type": "payment_terms",
@@ -91,9 +98,10 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "price",
+        "text_kLkdLk",
+        "share_buttons_JQX6cm",
         "payment_terms",
         "separator",
         "description",
@@ -108,7 +116,7 @@
         "container_size": "lg",
         "product_info_size": 35,
         "show_sticky_add_to_cart": true,
-        "center_basic_info": false,
+        "center_basic_info": true,
         "desktop_media_layout": "grid",
         "desktop_media_grid_gap": 30,
         "mobile_controls": "thumbnails",
