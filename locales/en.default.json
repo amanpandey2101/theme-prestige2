@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "page": "Page {{ page }}",
@@ -99,7 +108,7 @@
       "view_in_space": "View in your space",
       "taxes_included": "Tax included.",
       "taxes_excluded": "Tax excluded.",
-      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Shipping calculated<\/a> at checkout",
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Shipping calculated</a> at checkout",
       "size_chart": "Size chart",
       "available_colors_count": {
         "one": "{{ count }} color available",
@@ -430,7 +439,7 @@
   "password": {
     "general": {
       "follow_us": "Follow us",
-      "powered_by": "This shop is powered by",
+      "powered_by": " ",
       "store_owner": "Store owner?",
       "login": "Login"
     },
@@ -461,6 +470,16 @@
     "shop_the_look": {
       "view_products": "View products",
       "view_product": "View product"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "autocomplete_powered_by_google": " "
+      }
+    },
+    "links": {
+      "powered_by_shopify": " "
     }
   }
 }
