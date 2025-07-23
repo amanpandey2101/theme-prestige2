@@ -50,8 +50,8 @@
         "media_size": "lg",
         "show_initial_transition": true,
         "autoplay": true,
-        "autoplay_pause_on_video": true,
-        "cycle_speed": 5,
+        "autoplay_pause_on_video": false,
+        "cycle_speed": 19,
         "background": "#b7b2b2",
         "controls_color": "#ffffff"
       }
