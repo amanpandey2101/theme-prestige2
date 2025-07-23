@@ -65,7 +65,7 @@
             "collection": "t-shirts",
             "products_count": 8,
             "title": "",
-            "link_url": "",
+            "link_url": "shopify://collections/all-t-shirts",
             "link_text": "View all"
           }
         }
@@ -213,7 +213,7 @@
       "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
       "settings": {
         "color_scheme": "",
-        "image_size": "auto",
+        "image_size": "lg",
         "image": "shopify://shop_images/023A4975.png",
         "mobile_image": "shopify://shop_images/023A4975.png",
         "content_width": "sm",
