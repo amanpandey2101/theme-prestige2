@@ -14,7 +14,7 @@
       "settings": {
         "color_scheme": "",
         "show_title": true,
-        "page_width": "xs"
+        "page_width": "md"
       }
     },
     "image_with_text_block_aYgQFB": {
@@ -44,7 +44,7 @@
         "image": "shopify://shop_images/model3.jpg",
         "content_width": "lg",
         "enable_parallax": true,
-        "remove_vertical_spacing": true
+        "remove_vertical_spacing": false
       }
     }
   },
