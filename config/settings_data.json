@@ -36,10 +36,31 @@
     "favicon": "shopify://shop_images/download.png",
     "content_for_index": [],
     "blocks": {
-      "17370010407503379518": {
-        "type": "shopify://apps/wishlist-by-square/blocks/app-embed/88ec2beb-ce43-48ed-b791-0a6554082c2b",
+      "12342438634123318931": {
+        "type": "shopify://apps/xb-wishlist/blocks/xo-wishlist/cc07f1e9-907b-431d-99f8-4fce3efa75f1",
         "disabled": false,
-        "settings": {}
+        "settings": {
+          "price_color": "#ff0000",
+          "icon_add": "",
+          "icon_remove": ""
+        }
+      },
+      "9994742477291898530": {
+        "type": "shopify://apps/xb-wishlist/blocks/wishlist_notification/cc07f1e9-907b-431d-99f8-4fce3efa75f1",
+        "disabled": false,
+        "settings": {
+          "notification_placement": "top-end",
+          "top": 20,
+          "left": 20,
+          "right": 20,
+          "bottom": 20,
+          "color_success": "#ffffff",
+          "background_color_success": "#19af66",
+          "color_error": "#ffffff",
+          "background_color_error": "#f35746",
+          "notification_duration": 3000,
+          "notification_animation": "fade"
+        }
       }
     },
     "color_schemes": {
