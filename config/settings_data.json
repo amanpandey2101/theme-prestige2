@@ -84,7 +84,7 @@
         "settings": {
           "style": "style-1",
           "button_color": "#ffffff",
-          "button_bg-color": "#000000",
+          "button_bg-color": "#043d0c",
           "float_position": "bottom-right",
           "custom_position": false,
           "x_position": 0,
