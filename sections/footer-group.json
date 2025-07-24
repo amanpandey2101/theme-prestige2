@@ -116,7 +116,7 @@
         "text"
       ],
       "custom_css": [
-        ".footer {margin-top: 5vh; text-align: center;}",
+        ".footer {margin-top: 5vh; text-align: center; align-content: center;}",
         ".footer__block--image {position: relative; display: flex; justify-content: center;}",
         ".social-media {text-align: center; display: flex; justify-content: center;}"
       ],
