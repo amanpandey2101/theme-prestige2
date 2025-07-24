@@ -36,8 +36,8 @@
     "favicon": "shopify://shop_images/download.png",
     "content_for_index": [],
     "blocks": {
-      "10012068959737676665": {
-        "type": "shopify://apps/gropulse-wishlist/blocks/gropulse-wishlist/d606b448-832c-4b0a-adbb-21c7fa132df1",
+      "17370010407503379518": {
+        "type": "shopify://apps/wishlist-by-square/blocks/app-embed/88ec2beb-ce43-48ed-b791-0a6554082c2b",
         "disabled": false,
         "settings": {}
       }
