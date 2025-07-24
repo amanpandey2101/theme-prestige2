@@ -106,6 +106,10 @@
             "liquid": "",
             "page": ""
           }
+        },
+        "gropulse_wishlist_gropulse_wishlist_button_rdAFCA": {
+          "type": "shopify://apps/gropulse-wishlist/blocks/gropulse-wishlist-button/d606b448-832c-4b0a-adbb-21c7fa132df1",
+          "settings": {}
         }
       },
       "block_order": [
@@ -121,7 +125,8 @@
         "buy_buttons",
         "complementary_products",
         "accordion_U4KVef",
-        "accordion_G7ErUU"
+        "accordion_G7ErUU",
+        "gropulse_wishlist_gropulse_wishlist_button_rdAFCA"
       ],
       "settings": {
         "color_scheme": "",
