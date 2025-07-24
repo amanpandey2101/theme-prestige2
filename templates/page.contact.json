@@ -25,7 +25,7 @@
           "type": "dropdown",
           "settings": {
             "title": "Select your issue",
-            "values": "Delivery, Refund, Replacement"
+            "values": "Delivery Related, Refund/Return Related, Product Related, Collaboration Related"
           }
         }
       },
