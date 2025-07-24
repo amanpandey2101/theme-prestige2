@@ -35,6 +35,25 @@
           "type": "share_buttons",
           "settings": {}
         },
+        "modal_EG9pLz": {
+          "type": "modal",
+          "disabled": true,
+          "settings": {
+            "button_title": "Size Chart",
+            "button_style": "solid",
+            "stretch_button": false,
+            "button_background": "",
+            "button_text_color": "",
+            "modal_title": "Modal title",
+            "modal_content": "<p>Write some content that will appear in a modal</p>"
+          }
+        },
+        "liquid_HFXYPy": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  /* Styles for the modal container */\n  .size-chart-modal-overlay {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, 0.6);\n    display: flex;\n    justify-content: center;\n    align-items: flex-end; /* Aligns modal to the bottom */\n    z-index: 1000;\n    opacity: 0;\n    visibility: hidden;\n    transition: opacity 0.3s ease, visibility 0.3s ease;\n  }\n\n  .size-chart-modal-overlay.active {\n    opacity: 1;\n    visibility: visible;\n  }\n\n  /* Styles for the modal content */\n  .size-chart-modal-content {\n    background-color: #ffffff;\n    padding: 25px;\n    border-radius: 16px 16px 0 0; /* Rounded corners only on top */\n    width: 100%;\n    max-width: 600px; /* Max width for the modal */\n    position: relative;\n    transform: translateY(100%);\n    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);\n    box-shadow: 0 -4px 20px rgba(0,0,0,0.15);\n    max-height: 90vh;\n    overflow-y: auto;\n  }\n\n  .size-chart-modal-overlay.active .size-chart-modal-content {\n    transform: translateY(0);\n  }\n\n  /* NEW: Styles for the trigger container */\n  .size-chart-trigger-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n   /* Ensures responsiveness on very small screens */\n    gap: 15px; /* Adds space between items if they wrap */\n    padding: 12px 15px;\n    border: 1px solid #e0e0e0;\n    border-radius: 8px;\n    margin-top: 15px;\n  }\n\n  /* NEW: Styles for the text next to the button */\n  .size-chart-trigger-text {\n    font-size: 14px;\n    color: #333;\n   /* Allows text to take available space */\n  }\n\n  /* Styles for the trigger button */\n  .size-chart-trigger-button {\n    background-color: #000000;\n    color: #ffffff;\n    padding: 10px 18px;\n    border: none;\n    border-radius: 8px; /* Rounded corners */\n    cursor: pointer;\n    font-size: 12px;\n    font-weight: 500;\n    transition: background-color 0.3s ease;\n    display: inline-block;\n    margin-top: 0; /* Removed margin as container handles spacing */\n    flex-shrink: 0; /* Prevents button from shrinking on small screens */\n  }\n\n  .size-chart-trigger-button:hover {\n    background-color: #333333;\n  }\n\n  /* Styles for the close button */\n  .size-chart-modal-close {\n    position: absolute;\n    top: 15px;\n    right: 15px;\n    background: #f1f1f1;\n    border: none;\n    border-radius: 50%;\n    width: 30px;\n    height: 30px;\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    color: #333;\n    transition: background-color 0.3s ease, transform 0.3s ease;\n  }\n\n  .size-chart-modal-close:hover {\n    background-color: #e0e0e0;\n    transform: rotate(90deg);\n  }\n\n  /* Styles for the image inside the modal */\n  .size-chart-image {\n    width: 100%;\n    height: auto;\n    display: block;\n    border-radius: 8px;\n  }\n</style>\n\n<!-- Trigger Container -->\n<div class=\"size-chart-trigger-container\">\n  <span class=\"size-chart-trigger-text\">Need help choosing the right fit?</span>\n  <button type=\"button\" class=\"size-chart-trigger-button\" id=\"sizeChartTrigger\">\n    Size Chart\n  </button>\n</div>\n\n<!-- The Modal -->\n<div class=\"size-chart-modal-overlay\" id=\"sizeChartModal\">\n  <div class=\"size-chart-modal-content\">\n    <!-- Close Button -->\n    <button type=\"button\" class=\"size-chart-modal-close\" id=\"sizeChartClose\">&times;</button>\n\n    <!-- Modal Header -->\n    <h2 style=\"margin-top: 0; margin-bottom: 15px; text-align: center;\">Size Chart</h2>\n\n    <!-- Image Content -->\n    <img\n      src=\"https://cdn.shopify.com/s/files/1/0764/4345/1604/files/size_chart.jpg?v=1753375774\"\n      alt=\"Size Chart\"\n      class=\"size-chart-image\"\n      onerror=\"this.onerror=null;this.src='https://placehold.co/800x1000/e2e8f0/4a5568?text=Image+Not+Found';\"\n    >\n    {% comment %}\n      IMPORTANT: Replace the `src` attribute above with your size chart image URL.\n      1. Go to your Shopify Admin > Content > Files.\n      2. Upload your size chart image.\n      3. Click the \"Copy link\" button next to the file.\n      4. Paste the link here, replacing the placeholder URL.\n    {% endcomment %}\n  </div>\n</div>\n\n<script>\n  document.addEventListener('DOMContentLoaded', function() {\n    const modal = document.getElementById('sizeChartModal');\n    const triggerBtn = document.getElementById('sizeChartTrigger');\n    const closeBtn = document.getElementById('sizeChartClose');\n\n    // Function to open the modal\n    function openModal() {\n      if (modal) {\n        modal.classList.add('active');\n        // Trap focus inside the modal for accessibility\n        // You might want to add a more robust focus trap for production\n        closeBtn.focus();\n      }\n    }\n\n    // Function to close the modal\n    function closeModal() {\n      if (modal) {\n        modal.classList.remove('active');\n        // Return focus to the trigger button\n        if(triggerBtn) {\n            triggerBtn.focus();\n        }\n      }\n    }\n\n    // Event listeners\n    if (triggerBtn) {\n      triggerBtn.addEventListener('click', openModal);\n    }\n\n    if (closeBtn) {\n      closeBtn.addEventListener('click', closeModal);\n    }\n\n    // Close modal when clicking on the overlay\n    if (modal) {\n      modal.addEventListener('click', function(event) {\n        if (event.target === modal) {\n          closeModal();\n        }\n      });\n    }\n\n    // Close modal with the Escape key\n    document.addEventListener('keydown', function(event) {\n      if (event.key === 'Escape' && modal && modal.classList.contains('active')) {\n        closeModal();\n      }\n    });\n  });\n</script>"
+          }
+        },
         "payment_terms": {
           "type": "payment_terms",
           "settings": {}
@@ -126,6 +145,8 @@
         "price",
         "text_kLkdLk",
         "share_buttons_JQX6cm",
+        "modal_EG9pLz",
+        "liquid_HFXYPy",
         "payment_terms",
         "separator",
         "description",
