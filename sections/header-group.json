@@ -54,7 +54,7 @@
         "menu": "main-menu",
         "sidebar_menu": "",
         "menu_open_trigger": "hover",
-        "enable_search": true,
+        "enable_search": false,
         "sidebar_color_scheme": "",
         "sidebar_text_font": "heading",
         "sidebar_show_dividers": true,
@@ -67,10 +67,21 @@
         "transparent_header_text_color": "#ffffff",
         "transparent_logo": "shopify://shop_images/Artboard_4_4x_01a4453e-1850-42b2-b80e-fc2ed5cffc0d.png"
       }
+    },
+    "1753373797c0021c0b": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "1753373797c0021c0b"
   ]
 }
