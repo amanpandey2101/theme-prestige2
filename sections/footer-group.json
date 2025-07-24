@@ -116,10 +116,9 @@
         "text"
       ],
       "custom_css": [
-        ".footer {margin-top: 5vh; text-align: center; align-content: center;}",
-        "@media only screen and (max-width: 600px) {.footer {width: full; display: flex; flex-direction: column; justify-content: center; }}",
-        ".footer__block--image {position: relative; display: flex; justify-content: center;}",
-        ".social-media {text-align: center; display: flex; justify-content: center;}"
+        ".footer {margin-top: 5vh; text-align: center; display: flex; flex-direction: column; align-items: center;}",
+        ".footer__block--image {position: relative; display: flex; justify-content: center; align-items: center; /* added */ width: 100%; /* ensure it spans full width */}",
+        ".social-media {display: flex; justify-content: center; align-items: center; /* added */ width: 100%; /* ensure proper centering */ flex-wrap: wrap; /* optional: helps on small screens */ text-align: center;}"
       ],
       "settings": {
         "color_scheme": "",
