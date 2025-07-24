@@ -68,13 +68,13 @@
         "settings": {
           "selector_collection": ".product-card > a[href^='/products'],.card__heading.h5 > a[href^='/products'],.card__heading > a[href^='/products'],.product-card  a[href^='/products'],.card__heading  a[href^='/products'],.product-grid-item a[href^='/products'], .grid__item.grid-product a[href^='/products']",
           "icon_position": "top-right",
-          "custom_position": false,
+          "custom_position": true,
           "x_position": 0,
-          "y_position": 0,
+          "y_position": 91,
           "x_position-mobile": 0,
           "y_position-mobile": 0,
           "icon_size": 2,
-          "icon_color": "#ff0000",
+          "icon_color": "#000000",
           "custom_placement": ""
         }
       }
