@@ -75,6 +75,19 @@
             "payment_button_text_color": ""
           }
         },
+        "xb_wishlist_button_wishlist_4zbPVL": {
+          "type": "shopify://apps/xb-wishlist/blocks/button_wishlist/cc07f1e9-907b-431d-99f8-4fce3efa75f1",
+          "settings": {
+            "btn_style": "style1",
+            "btn_width": 441,
+            "btn_bg-color": "transparent",
+            "btn_border-color": "#000",
+            "text_size": 16,
+            "text_color": "#000",
+            "icon_color": "#000000",
+            "icon_size": 2
+          }
+        },
         "complementary_products": {
           "type": "complementary_products",
           "settings": {
@@ -106,10 +119,6 @@
             "liquid": "",
             "page": ""
           }
-        },
-        "gropulse_wishlist_gropulse_wishlist_button_rdAFCA": {
-          "type": "shopify://apps/gropulse-wishlist/blocks/gropulse-wishlist-button/d606b448-832c-4b0a-adbb-21c7fa132df1",
-          "settings": {}
         }
       },
       "block_order": [
@@ -123,10 +132,10 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "xb_wishlist_button_wishlist_4zbPVL",
         "complementary_products",
         "accordion_U4KVef",
-        "accordion_G7ErUU",
-        "gropulse_wishlist_gropulse_wishlist_button_rdAFCA"
+        "accordion_G7ErUU"
       ],
       "settings": {
         "color_scheme": "",
