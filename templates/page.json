@@ -37,6 +37,9 @@
         "richtext_6G4ppy",
         "richtext_endje6"
       ],
+      "custom_css": [
+        ".image-with-text-block{margin-top:5vh;}"
+      ],
       "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
       "settings": {
         "color_scheme": "",
@@ -44,7 +47,7 @@
         "image": "shopify://shop_images/model3.jpg",
         "content_width": "lg",
         "enable_parallax": true,
-        "remove_vertical_spacing": false
+        "remove_vertical_spacing": true
       }
     }
   },
