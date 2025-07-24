@@ -37,9 +37,7 @@
         "richtext_6G4ppy",
         "richtext_endje6"
       ],
-      "custom_css": [
-        ".image-with-text-block{margin-top:5vh;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
       "settings": {
         "color_scheme": "",
