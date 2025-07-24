@@ -15,7 +15,7 @@
         "video_FLFyH7": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/Comp.mp4",
+            "video": "shopify://files/videos/video.mp4",
             "mobile_video": "shopify://files/videos/sixty9ine loop short.mp4",
             "allow_sound": false,
             "subheading": "",
@@ -47,7 +47,7 @@
       "settings": {
         "allow_transparent_header": false,
         "show_next_section_button": true,
-        "media_size": "lg",
+        "media_size": "fill",
         "show_initial_transition": true,
         "autoplay": true,
         "autoplay_pause_on_video": false,
