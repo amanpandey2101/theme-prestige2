@@ -117,6 +117,7 @@
       ],
       "custom_css": [
         ".footer {margin-top: 5vh; text-align: center; align-content: center;}",
+        "@media only screen and (max-width: 600px) {.footer {display:flex; flex-direction: column; justify-content: center; }}",
         ".footer__block--image {position: relative; display: flex; justify-content: center;}",
         ".social-media {text-align: center; display: flex; justify-content: center;}"
       ],
