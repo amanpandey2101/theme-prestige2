@@ -180,10 +180,10 @@
         "allow_transparent_header": true,
         "show_next_section_button": false,
         "media_size": "auto",
-        "show_initial_transition": false,
+        "show_initial_transition": true,
         "autoplay": true,
         "autoplay_pause_on_video": false,
-        "cycle_speed": 5,
+        "cycle_speed": 4,
         "background": "#1c1c1c",
         "controls_color": "#ffffff"
       }
