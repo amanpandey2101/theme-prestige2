@@ -75,7 +75,11 @@
                                 </div>
 
                                 {%- capture button_label -%}{{ 'customer.order.view_details' | t }}{%- endcapture -%}
-                                {%- render 'button', href: order.customer_url, content: button_label, style: 'outline' -%}
+                                {%- render 'button',
+                                  href: order.customer_url,
+                                  content: button_label,
+                                  style: 'outline'
+                                -%}
                               </div>
                             </div>
                           {%- endfor -%}
@@ -84,13 +88,16 @@
 
                       <table class="table table--reduce-border table--lg hidden md:table">
                         <thead>
-                        <tr>
-                          <th>{{ 'customer.order.order' | t }}</th>
-                          <th>{{ 'customer.order.date' | t }}</th>
-                          <th>{{ 'customer.order.payment_status' | t }}</th>
-                          <th>{{ 'customer.order.fulfillment_status' | t }}</th>
-                          <th class="text-end">{{ 'customer.order.total' | t }}</th>
-                        </tr>
+                          <tr>
+                            <th>{{ 'customer.order.order' | t }}</th>
+                            <th>{{ 'customer.order.date' | t }}</th>
+                            <th>{{ 'customer.order.payment_status' | t }}</th>
+                            <th>{{ 'customer.order.fulfillment_status' | t }}</th>
+                            <th class="text-end">{{ 'customer.order.total' | t }}</th>
+                            <!-- Yanet Code START -->
+                            <th class="ColumnReturnLink" scope="col" role="columnheader">Actions</th>
+                            <!-- Yanet Code END -->
+                          </tr>
                         </thead>
 
                         <tbody>
@@ -106,6 +113,16 @@
                               <td>{{ order.financial_status_label }}</td>
                               <td>{{ order.fulfillment_status_label }}</td>
                               <td class="text-end">{{ order.total_net_amount | money }}</td>
+                              <!-- Yanet Code START -->
+                              <td class="RowOrder ColumnReturnLink" role="cell">
+                                <a
+                                  id="ldt-dl-{{ order.id }}"
+                                  target="_blank"
+                                  href="https://return.yanet.io/app-proxy/bridge/order?osId={{ order.id }}&shop={{ shop.permanent_domain }}&root={{ request.locale.root_url | url_encode }}"
+                                  >Return & Exchange</a
+                                >
+                              </td>
+                              <!-- Yanet Code END -->
                             </tr>
                           {%- endfor -%}
                         </tbody>
