@@ -11,6 +11,10 @@
   "type": "header",
   "name": "Header group",
   "sections": {
+    "1754654084fba57e7a": {
+      "type": "_blocks",
+      "settings": {}
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -44,7 +48,7 @@
       "type": "header",
       "custom_css": [
         ".header {z-index: 1;}",
-        ".header__primary-nav{z-index: 1;}"
+        ".header__primary-nav {z-index: 1;}"
       ],
       "settings": {
         "color_scheme": "scheme-1",
@@ -84,6 +88,7 @@
     }
   },
   "order": [
+    "1754654084fba57e7a",
     "announcement-bar",
     "header",
     "1753373797c0021c0b"

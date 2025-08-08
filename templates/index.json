@@ -44,6 +44,9 @@
       "block_order": [
         "video_FLFyH7"
       ],
+      "custom_css": [
+        ".slideshow {margin-bottom: 5vh;}"
+      ],
       "settings": {
         "allow_transparent_header": false,
         "show_next_section_button": true,
@@ -55,6 +58,49 @@
         "background": "#b7b2b2",
         "controls_color": "#ffffff"
       }
+    },
+    "175465454150a66442": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_6c9caca_nVp8cp": {
+          "type": "ai_gen_block_6c9caca",
+          "settings": {
+            "coupon_code": "ARSH25",
+            "discount_percentage": 25,
+            "buyer_limit": 99,
+            "promotional_text": "",
+            "background_color": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "coupon_bg_color": "#ffffff",
+            "coupon_text_color": "#ff6b35",
+            "coupon_border_color": "#ff6b35",
+            "discount_color": "#ffff00",
+            "urgency_color": "#ffffff",
+            "buyer_limit_color": "#ffff00",
+            "promotional_color": "#ffffff",
+            "accent_color": "#ffffff",
+            "main_text_size": 28,
+            "coupon_text_size": 16,
+            "discount_text_size": 26,
+            "urgency_text_size": 16,
+            "promotional_text_size": 14,
+            "text_transform": "uppercase",
+            "urgency_text_transform": "none",
+            "padding_vertical": 30,
+            "padding_horizontal": 30,
+            "text_spacing": 16,
+            "border_radius": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_6c9caca_nVp8cp"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {}
     },
     "featured-collections": {
       "type": "featured-collections",
@@ -337,6 +383,7 @@
   },
   "order": [
     "slideshow",
+    "175465454150a66442",
     "featured-collections",
     "slideshow_jjy8AP",
     "image_with_text_block_QVyJ4g",
