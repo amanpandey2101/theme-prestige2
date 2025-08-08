@@ -62,11 +62,11 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "t-shirts",
-            "products_count": 4,
+            "collection": "all-t-shirts",
+            "products_count": 12,
             "title": "",
             "link_url": "shopify://collections/all-t-shirts",
-            "link_text": "View all"
+            "link_text": ""
           }
         }
       },
@@ -77,7 +77,7 @@
         "color_scheme": "scheme-1",
         "separate_section_with_border": true,
         "hide_product_information": false,
-        "stack_products": false,
+        "stack_products": true,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "horizontal_spacing_factor": 1,
