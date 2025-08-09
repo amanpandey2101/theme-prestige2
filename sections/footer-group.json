@@ -85,7 +85,7 @@
         "newsletter_8cgxMQ": {
           "type": "newsletter",
           "settings": {
-            "title": "Newsletter",
+            "title": "Sixty9ine lifestyle pvt. ltd.",
             "content": "<p>Sign up to our newsletter to receive exclusive offers.</p>",
             "button_background": "#000000",
             "button_text_color": "#ffffff"
@@ -117,7 +117,7 @@
       ],
       "custom_css": [
         ".footer {margin-top: 5vh; text-align: center; display: flex; flex-direction: column; align-items: center;}",
-        "@media only screen and (max-width: 600px) {.footer__block--image {position: relative; display: flex; justify-content: center; align-items: center; /* added */ width: 100%; /* ensure it spans full width */}}",
+        "@media only screen and (max-width: 600px) {.footer__block--image {position: relative; display: flex; justify-content: center; align-items: center; /* added */ width: 100%; /* ensure it spans full width */ }}",
         ".social-media {display: flex; justify-content: center; align-items: center; /* added */ width: 100%; /* ensure proper centering */ flex-wrap: wrap; /* optional: helps on small screens */ text-align: center;}"
       ],
       "settings": {
