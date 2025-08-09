@@ -22,7 +22,7 @@ Supported variables
 * play_button_background: an optional background color for the play button
 * class: optional class applied on the item
 {%- endcomment -%}
-
+text above banner
 {%- liquid
   if preload
     assign loading = 'eager'
@@ -32,7 +32,6 @@ Supported variables
     assign fetchpriority = 'auto'
   endif
 -%}
-text above banner
 {%- case media.media_type -%}
   {%- when 'image' -%}
     {{- media | image_url: width: media.preview_image.width | image_tag: loading: loading, fetchpriority: fetchpriority, sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: class -}}
