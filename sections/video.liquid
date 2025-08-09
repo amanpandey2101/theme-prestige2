@@ -10,11 +10,11 @@
       {%- endif -%}
     {%- endunless -%}
   {%- endcapture -%}
-  text above banner
+
   {%- if section.settings.video -%}
     {%- if section.settings.mobile_video != blank -%}
       {%- assign poster_image = section.settings.poster | default: section.settings.mobile_video.preview_image -%}
-
+        text above banner
       <video-media {% if section.settings.autoplay %}autoplay{% endif %} class="sm:hidden" style="--aspect-ratio: {{ section.settings.mobile_video.aspect_ratio }}">
         {{- poster_image | image_url: width: poster_image.width | image_tag: loading: 'lazy', sizes: '100vw', widths: '200,300,400,500,600,700,800,900,1000,1200' -}}
         {{- section.settings.mobile_video | video_tag: class: 'object-cover sm:hidden', controls: section.settings.show_controls, playsinline: true, muted: section.settings.autoplay, loop: section.settings.autoplay, preload: 'metadata', image_size: '400x' -}}
