@@ -40,6 +40,18 @@ Supported variables
   {%- when 'video', 'external_video' -%}
   {% assign preview_img_url = media.preview_image | image_url: width: 1600 %}
 
+{%- when 'video', 'external_video' -%}
+  {% comment %} 
+    Fallback poster URL in case media.preview_image is not set 
+  {% endcomment %}
+  {% assign preview_img_url = '' %}
+  {% if media.preview_image %}
+    {% assign preview_img_url = media.preview_image | image_url: width: 1600 %}
+  {% else %}
+    {% comment %} Change this to a static hero placeholder in /assets {% endcomment %}
+    {% assign preview_img_url = 'hero-fallback.jpg' | asset_url %}
+  {% endif %}
+
   <video-media 
     {% if class %}class="{{ class }}"{% endif %}
     type="{{ media.media_type }}"
@@ -47,7 +59,7 @@ Supported variables
     {% if group != blank %}group="{{ group | escape }}"{% endif %}
     style="--aspect-ratio: {{ media.aspect_ratio }}; --play-button-background: {{ play_button_background | default: settings.default_color_scheme.settings.background }}">
 
-    <!-- Always load the poster image eagerly so LCP is fast -->
+    <!-- Poster image for instant LCP -->
     <img
       src="{{ preview_img_url }}"
       alt="Preview"
@@ -67,7 +79,6 @@ Supported variables
         style="width:100%; height:auto; display:block; margin:0 auto;">
         <source src="{{ media | file_url }}" type="video/webm">
         <source src="{{ media | file_url | replace: '.webm', '.mp4' }}" type="video/mp4">
-        <!-- fallback image -->
         <img src="{{ preview_img_url }}" alt="Preview" style="width:100%; height:auto;" />
       </video>
     {% else %}
