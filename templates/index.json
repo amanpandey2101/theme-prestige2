@@ -14,7 +14,6 @@
       "blocks": {
         "video_FLFyH7": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/Comp.mp4",
             "mobile_video": "shopify://files/videos/Untitled video - Made with Clipchamp (1).mp4",
@@ -43,6 +42,7 @@
         },
         "image_wK3NCz": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/model3.jpg",
             "mobile_image": "shopify://shop_images/drip2.png",
