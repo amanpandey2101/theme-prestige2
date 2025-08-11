@@ -44,7 +44,7 @@ Supported variables
   endif
 -%}
 
-<product-card class="product-card" {% if reveal %}reveal-on-scroll="true"{% endif %} handle="{{ product.handle | escape }}">
+<product-card class="product-card" {% if reveal %}reveal-on-scroll="true"{% endif %} handle="{{ product.handle | escape }}" data-card-index="{{ card_index }}">
   {%- comment -%}
   --------------------------------------------------------------------------------------------------------------------
   PRODUCT MEDIA
@@ -67,7 +67,15 @@ Supported variables
         {%- endcapture -%}
 
         {%- capture main_image_classes -%}product-card__image product-card__image--primary {% if settings.product_image_aspect_ratio contains 'crop' %}object-cover{% endif %} aspect-{{ settings.product_image_aspect_ratio | split: '_' | first }}{%- endcapture -%}
-        {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
+        {% assign is_first_grid_items = card_index != blank and card_index < 6 %}
+        {% if is_first_grid_items %}
+          {% assign loading_attr = 'eager' %}
+          {% assign fetchpriority_attr = 'high' %}
+        {% else %}
+          {% assign loading_attr = 'lazy' %}
+          {% assign fetchpriority_attr = 'low' %}
+        {% endif %}
+        {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: loading_attr, fetchpriority: fetchpriority_attr, sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
 
         {%- if show_secondary_image and product.media.size > 1 -%}
           {%- assign next_media = product.media[product.featured_media.position] | default: product.media[1] -%}

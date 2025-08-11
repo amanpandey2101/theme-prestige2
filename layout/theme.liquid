@@ -40,6 +40,20 @@
       <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer></script>
     {%- endif -%}
 
+    <!-- WebP support detection -->
+    <script>
+      (function(){
+        function supportsWebP(){
+          return new Promise(function(resolve){
+            var webP = new Image();
+            webP.onload = webP.onerror = function(){ resolve(webP.height === 2); };
+            webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+          });
+        }
+        supportsWebP().then(function(supported){ if (supported) document.documentElement.classList.add('webp'); });
+      })();
+    </script>
+
     <script>
       if (!(HTMLScriptElement.supports && HTMLScriptElement.supports('importmap'))) {
         const importMapPolyfill = document.createElement('script');
@@ -61,14 +75,52 @@
       }
     </script>
 
-    <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
-    <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
+    <script type="module" src="{{ 'vendor.min.js' | asset_url }}" defer></script>
+    <script type="module" src="{{ 'theme.js' | asset_url }}" defer></script>
+
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="preconnect" href="https://pdp.gokwik.co">
 
     {{ content_for_header }}
 
-    {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
+    <!-- Critical CSS inline -->
+    {% render 'critical-css' %}
+
+    <!-- Defer non-critical CSS with preload swap -->
+    <link rel="preload" href="{{ 'theme.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ 'theme.css' | asset_url }}"></noscript>
+
+    <!-- Lazy-load helper -->
+    <script src="{{ 'lazy-load.js' | asset_url }}" defer></script>
+
+    {% comment %} Preload hero/LCP image on index or product {% endcomment %}
+    {% if request.page_type == 'index' %}
+      {% assign featured_collection = collections['featured-products'] %}
+      {% if featured_collection and featured_collection.products.first and featured_collection.products.first.featured_media %}
+        <link rel="preload" as="image" href="{{ featured_collection.products.first.featured_media | image_url: width: 1200 }}" fetchpriority="high">
+      {% endif %}
+    {% elsif request.page_type == 'product' and product and product.featured_media %}
+      <link rel="preload" as="image" href="{{ product.featured_media | image_url: width: 1200 }}" fetchpriority="high">
+    {% endif %}
   
   {% render 'shogun-head' %}
+
+  <!-- Facebook Pixel defer hook (optional): place your fbq init here if used -->
+  <script>
+    window.addEventListener('load', function() {
+      if (window.fbq) return; // if Online Store scripts already injected it, skip
+      /* Example:
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'YOUR_PIXEL_ID');
+      fbq('track', 'PageView');
+      */
+    });
+  </script>
 </head>
 
   {% liquid
