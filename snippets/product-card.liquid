@@ -67,8 +67,7 @@ Supported variables
         {%- endcapture -%}
 
         {%- capture main_image_classes -%}product-card__image product-card__image--primary {% if settings.product_image_aspect_ratio contains 'crop' %}object-cover{% endif %} aspect-{{ settings.product_image_aspect_ratio | split: '_' | first }}{%- endcapture -%}
-        {% assign is_first_grid_items = card_index != blank and card_index < 6 %}
-        {% if is_first_grid_items %}
+        {% if card_index != blank and card_index < 6 %}
           {% assign loading_attr = 'eager' %}
           {% assign fetchpriority_attr = 'high' %}
         {% else %}
