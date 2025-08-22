@@ -44,7 +44,7 @@
         "image_wK3NCz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/model3.jpg",
+            "image": "shopify://shop_images/arshdeep-website-banner.png",
             "mobile_image": "shopify://shop_images/WebsiteM1.png",
             "subheading": "",
             "title": "",
@@ -75,7 +75,7 @@
       ],
       "custom_css": [
         ".slideshow {margin-bottom: 5vh;}",
-        ".button-group {position:relative; top:4vh;}"
+        ".button-group {position: relative; top: 4vh;}"
       ],
       "settings": {
         "allow_transparent_header": false,
