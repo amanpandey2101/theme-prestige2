@@ -74,7 +74,8 @@
         "image_wK3NCz"
       ],
       "custom_css": [
-        ".slideshow {margin-bottom: 5vh;}"
+        ".slideshow {margin-bottom: 5vh;}",
+        ".button-group {position:relative; top:4vh;}"
       ],
       "settings": {
         "allow_transparent_header": false,
