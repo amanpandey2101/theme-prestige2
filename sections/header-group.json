@@ -47,8 +47,8 @@
     "header": {
       "type": "header",
       "custom_css": [
-        ".header {z-index: 1;}",
-        ".header__primary-nav {z-index: 1;}"
+        ".header {z-index: 100;}",
+        ".header__primary-nav {z-index: 100;}"
       ],
       "settings": {
         "color_scheme": "scheme-1",
