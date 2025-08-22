@@ -75,7 +75,7 @@
       ],
       "custom_css": [
         ".slideshow {margin-bottom: 5vh;}",
-        ".button-group {position: relative; top: 4vh;}"
+        ".button-group {position: relative; top: 4.3vh;}"
       ],
       "settings": {
         "allow_transparent_header": false,
