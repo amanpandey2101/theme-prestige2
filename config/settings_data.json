@@ -63,22 +63,6 @@
           "notification_animation": "fade"
         }
       },
-      "11413113034274116516": {
-        "type": "shopify://apps/xb-wishlist/blocks/wishlist_collection/cc07f1e9-907b-431d-99f8-4fce3efa75f1",
-        "disabled": false,
-        "settings": {
-          "selector_collection": ".product-card > a[href^='/products'],.card__heading.h5 > a[href^='/products'],.card__heading > a[href^='/products'],.product-card  a[href^='/products'],.card__heading  a[href^='/products'],.product-grid-item a[href^='/products'], .grid__item.grid-product a[href^='/products']",
-          "icon_position": "top-right",
-          "custom_position": false,
-          "x_position": 0,
-          "y_position": 91,
-          "x_position-mobile": 0,
-          "y_position-mobile": 0,
-          "icon_size": 2,
-          "icon_color": "#000000",
-          "custom_placement": ""
-        }
-      },
       "8813414294664651821": {
         "type": "shopify://apps/xb-wishlist/blocks/wishlist_float/cc07f1e9-907b-431d-99f8-4fce3efa75f1",
         "disabled": false,
@@ -96,6 +80,22 @@
         "type": "shopify://apps/bucks/blocks/app-embed/4f0a9b06-9da4-4a49-b378-2de9d23a3af3",
         "disabled": false,
         "settings": {}
+      },
+      "11413113034274116516": {
+        "type": "shopify://apps/xb-wishlist/blocks/wishlist_collection/cc07f1e9-907b-431d-99f8-4fce3efa75f1",
+        "disabled": false,
+        "settings": {
+          "selector_collection": ".product-card > a[href^='/products'],.card__heading.h5 > a[href^='/products'],.card__heading > a[href^='/products'],.product-card  a[href^='/products'],.card__heading  a[href^='/products'],.product-grid-item a[href^='/products'], .grid__item.grid-product a[href^='/products']",
+          "icon_position": "top-right",
+          "custom_position": false,
+          "x_position": 0,
+          "y_position": 91,
+          "x_position-mobile": 0,
+          "y_position-mobile": 0,
+          "icon_size": 1.2,
+          "icon_color": "#000000",
+          "custom_placement": ""
+        }
       }
     },
     "color_schemes": {
