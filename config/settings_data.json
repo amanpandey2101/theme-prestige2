@@ -28,7 +28,7 @@
     "currency_code_enabled": true,
     "show_page_transition": true,
     "round_color_swatches": true,
-    "product_image_aspect_ratio": "tall",
+    "product_image_aspect_ratio": "tall_crop",
     "product_card_text_font": "heading",
     "product_color_display": "swatch",
     "show_product_rating": false,
