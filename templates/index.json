@@ -74,7 +74,6 @@
         "image_wK3NCz"
       ],
       "custom_css": [
-        ".slideshow {margin-bottom: 5vh;}",
         ".button-group {position: relative; top: 4.3vh;}"
       ],
       "settings": {
